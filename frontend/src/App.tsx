@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
+import Navbar from "./components/common/Navbar"
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
+    <div className="h-screen w-screen overflow-hidden bg-[#f4f1f8]">
+      <div><Navbar /></div>
     </div>
   )
 }
