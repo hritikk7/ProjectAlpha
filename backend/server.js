@@ -1,15 +1,17 @@
-const express = require("express")
-const app = express()
+const express = require("express");
+const app = express();
 
-const PORT = 5000;
+const connectDb = require("./db/db");
 
-app.get('/', (req, res)=>[
-  res.send("helloo")
+// port
+const PORT = process.env.PORT || 5000;
 
-])
+//database connection
+connectDb();
+
+app.get("/", (req, res) => [res.send("helloo")]);
 
 
-app.listen(PORT, ()=>{
-  console.log(`Listning on Port: ${PORT}`)
-  
-})
+app.listen(PORT, () => {
+  console.log(`Listning on Port: ${PORT}`);
+});
