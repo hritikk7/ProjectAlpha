@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center h-16 px-4'>
 
           <div className='flex items-center sm:gap-2'>
-            <span><Sofa className='h-9 w-9 text-purple-700 sm:h-7 sm:w-7' /></span>
+            <span><Sofa className='h-9 w-9 text-indigo-600 sm:h-7 sm:w-7' /></span>
             <span className='font-semibold md:text-2xl'>Luxewood</span>
           </div>
           <div className='hidden md:flex sm:gap-5'>

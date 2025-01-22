@@ -39,11 +39,11 @@ const Footer = () => {
         </div>
         <div className='border-t border-gray-400 mt-14 md:flex md:justify-between'>
           <div className='flex items-center mt-4'>
-            <div><Sofa className='h-9 w-9 text-purple-700 sm:h-7 sm:w-7' /></div>
+            <div><Sofa className='h-9 w-9 text-indigo-600 sm:h-7 sm:w-7' /></div>
             <div className="text-xl text-white ml-2 font-semibold md:text-2xl">Luxewood</div>
           </div>
           <div className='mt-2 md:mt-4'>
-            <p className='text-base text-gray-300'>© 2024 LuxeFurn. All rights reserved.</p>
+            <p className='text-base text-gray-300'>© 2024 Luxewood. All rights reserved.</p>
           </div>
         </div>
       </div>
