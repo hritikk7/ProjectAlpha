@@ -1,4 +1,5 @@
 import mongoose, { Schema } from "mongoose";
+import { z } from 'zod';
 
 const { Schema, model } = mongoose;
 
