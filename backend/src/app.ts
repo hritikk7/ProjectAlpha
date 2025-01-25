@@ -17,8 +17,8 @@ app.use(express.json());
 
 app.use('/api/', api)
 
-app.use(notFound)
 app.use(errorHandler)
+app.use(notFound)
 
 
 export default app;
