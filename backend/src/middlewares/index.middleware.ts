@@ -1,17 +1,20 @@
 import { NextFunction, Request, Response } from "express";
 import { config } from "dotenv";
+config()
 
-export const notFound = async (
+
+export const notFound =   (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   res.send(404);
   const error = new Error(` Not Found ${req.originalUrl}`);
+  console.log("🚀 ~ error:", error)
   next(error);
 };
 
-export const errorHandler = async (
+export const errorHandler =  (
   err: Error,
   req: Request,
   res: Response,
