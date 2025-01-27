@@ -1,17 +1,18 @@
-import Footer from "./components/common/Footer"
-import Navbar from "./components/common/Navbar"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { ThemeProvider } from "./components/Theme/ThemeProvider"
-import HeroSection from "./pages/landing"
+import Layout from "./components/common/Layout"
+import Signup from "./pages/Signup"
 
 
 export default function Home() {
   return (
     <ThemeProvider>
-      <div className="h-screen w-screen bg-[#f4f1f8] dark:text-gray-300 dark:bg-black">
-        <div><Navbar /></div>
-        <div><HeroSection /></div>
-        <div><Footer /></div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   )
 }
